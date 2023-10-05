@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+.card-wrapper{
+    width: 35rem;
+    height: 13rem;
+    background-color: red;
+}
