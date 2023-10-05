@@ -4,8 +4,16 @@
     box-sizing: none;
 }
 
+/*======================================== CARD BODY ========================================*/
 .card-wrapper{
-    width: 35rem;
-    height: 13rem;
     background-color: red;
+    width: 55rem;
+    height: 27.5rem;
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: right;
 }

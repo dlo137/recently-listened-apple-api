@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body, html {
+    height: 100%; 
+}
+
+.App {
+    height: 100%; /* Center the content vertically and horizontally */
+}
+
+.Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Make the Wrapper take up the full width */
+    height: 100%; /* Make the Wrapper take up the full height */
+
+    position: absolute; /* Position the Wrapper absolutely */
+    top: 0; /* Position from the top of the viewport */
+    left: 0; /* Position from the left of the viewport */
+}
+
