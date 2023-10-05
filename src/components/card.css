@@ -4,16 +4,31 @@
     box-sizing: none;
 }
 
-/*======================================== CARD BODY ========================================*/
+/*======================================== WRAPPER ========================================*/
 .card-wrapper{
-    background-color: red;
+    background-color: #df002d;
     width: 55rem;
     height: 27.5rem;
     border-radius: 3rem;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
 }
+
+/*======================================== CARD HEADER ========================================*/
 
 .logo-container{
     display: flex;
     justify-content: right;
 }
+
+/*======================================== CARD BODY ========================================*/
+
+body{
+    display: flex;
+}
+
+.left-container, .right-container {
+    flex: 1; /* Equal flex for left and right containers */
+    padding: 20px; /* Add padding for spacing */
+  }
+
+  
