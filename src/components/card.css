@@ -6,11 +6,13 @@
 
 /*======================================== WRAPPER ========================================*/
 .card-wrapper{
-    background-color: #df002d;
-    width: 55rem;
-    height: 27.5rem;
+    background-color: #d2042d;
+    width: 60rem;
+    height: 28rem;
     border-radius: 3rem;
     padding: 2rem 2rem 4rem 2rem;
+
+    filter: drop-shadow(0px 16px 3px #ffb5c4);
 }
 
 /*======================================== CARD HEADER ========================================*/
@@ -31,6 +33,99 @@ body{
     padding: 20px; /* Add padding for spacing */
   }
 
-.left-container > .album-cover {
-    
+/*======================================== CARD LEFT SIDE ======================================== */
+
+.left-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.left-container > .album-cover {
+    background-color: rgb(53, 53, 53);
+    height: 20rem;
+    width: 23rem;
+    border-radius: 3rem;
+}
+
+/*======================================== CARD RIGHT SIDE ======================================== */
+
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    gap: 3rem;
+    color: white;
+}
+
+/*================== SONG ARTIST RECENTLY-PLAYED==================*/
+
+.right-container > .song-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song-info > .recently-played{
+    font-size: 8px;
+    font-style: italic;
+    color: rgb(207, 207, 207);
+}
+
+.song-artist{
+    filter: drop-shadow(0px 9px 4px #000000);
+}
+
+.song-artist > .song{
+    font-size: 32px;
+}
+
+.song-artist > .artist{
+    font-size: 16px;
+}
+
+/*================== SOUNDBAR ==================*/
+
+.soundbar-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* CONTROL ICONS*/
+
+.soundbar-container > .soundbar-icons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem;
+}
+
+.soundbar-icons > .controls{
+    height: 1.5rem;
+    width: auto;
+    margin-bottom: 1rem;
+
+}
+
+/* DURATION LINE */
+
+.soundbar-container >  .duration-line{
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid white;
+}
+
+/* SONG TIME */
+
+.soundbar-container > .song-time{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+

@@ -27,24 +27,26 @@ const CardComponent = () => {
         <div className='right-container'>
           {/* ======================= SONG INFORMATION ======================= */}
           <div className='song-info'>
-            <div>
+            <div className='recently-played'>
               <h1>Recently Played</h1>
             </div>
 
             <div className='song-artist'>
-              <p>Song</p>
-              <p>Artist</p>
+              <p className='song'>Satisfy My Soul</p>
+              <p className='artist'>BOB MARLEY</p>
             </div>
           </div>
 
           {/* ======================= SOUND BAR ======================= */}
           <div className='soundbar-container'>
             <div className='soundbar-icons'>
-              soundbar icons
+              <img src={rewindIcon} alt='rewind icon'  className='controls'/>
+              <img src={playIcon} alt='play icon' className='controls'/>
+              <img src={fowardIcon} alt='foward icon' className='controls'/>
             </div>
 
             <div className='duration-line'>
-              line
+              <hr />
             </div>
 
             <div className='song-time'>
