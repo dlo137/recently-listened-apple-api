@@ -9,10 +9,6 @@ body, html {
 }
 
 .App {
-    height: 100%; /* Center the content vertically and horizontally */
-}
-
-.Wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,5 +18,13 @@ body, html {
     position: absolute; /* Position the Wrapper absolutely */
     top: 0; /* Position from the top of the viewport */
     left: 0; /* Position from the left of the viewport */
+    border: 4px solid black;
+}
+
+.Wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid black;
 }
 

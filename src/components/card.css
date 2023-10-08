@@ -4,11 +4,19 @@
     box-sizing: none;
 }
 
+@font-face {
+    font-family: 'GothicA1';
+    src: url('../fonts/Gothic_A1/GothicA1-Black.ttf') format('truetype'),
+         url('../fonts/Gothic_A1/GothicA1-Light.ttf') format('truetype'),
+         url('../fonts/Gothic_A1/GothicA1-ExtraLight.ttf') format('truetype');
+
+  }
+
 /*======================================== WRAPPER ========================================*/
 .card-wrapper{
     background-color: #d2042d;
-    width: 60rem;
-    height: 28rem;
+    width: 50rem;
+    height: 22rem;
     border-radius: 3rem;
     padding: 2rem 2rem 4rem 2rem;
 
@@ -26,6 +34,7 @@
 
 body{
     display: flex;
+    gap: 2rem;
 }
 
 .left-container, .right-container {
@@ -43,9 +52,11 @@ body{
 
 .left-container > .album-cover {
     background-color: rgb(53, 53, 53);
-    height: 20rem;
-    width: 23rem;
+    height: 18rem;
+    width: 20rem;
     border-radius: 3rem;
+    /* centering album cover, temp fix */
+    margin-bottom: 1rem;
 }
 
 /*======================================== CARD RIGHT SIDE ======================================== */
@@ -58,7 +69,7 @@ body{
     justify-content: center;
     text-align: center;
 
-    gap: 3rem;
+    gap: 2.5rem;
     color: white;
 }
 
@@ -68,24 +79,29 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: .5rem;
 }
 
 .song-info > .recently-played{
-    font-size: 8px;
-    font-style: italic;
+    font-size: 5px;
     color: rgb(207, 207, 207);
+    font-family: 'GothicA1-ExtraLight', sans-serif;
+    font-style: thin;
 }
 
 .song-artist{
-    filter: drop-shadow(0px 9px 4px #000000);
+    filter: drop-shadow(0px 7px 1.5px rgba(0, 0, 0, 0.5));
 }
 
 .song-artist > .song{
-    font-size: 32px;
+    font-family: 'GothicA1', sans-serif;
+    font-size: 28px;
+    margin-bottom: .2rem;
 }
 
 .song-artist > .artist{
-    font-size: 16px;
+    font-family: 'GothicA1-Light', sans-serif;
+    font-size: 12px;
 }
 
 /*================== SOUNDBAR ==================*/
@@ -106,7 +122,7 @@ body{
 }
 
 .soundbar-icons > .controls{
-    height: 1.5rem;
+    height: 1.2rem;
     width: auto;
     margin-bottom: 1rem;
 
@@ -118,6 +134,7 @@ body{
     width: 100%;
     border-radius: 1rem;
     border: 1px solid white;
+    margin-bottom: .3rem;
 }
 
 /* SONG TIME */
@@ -125,7 +142,7 @@ body{
 .soundbar-container > .song-time{
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 9px;
 }
 
 
