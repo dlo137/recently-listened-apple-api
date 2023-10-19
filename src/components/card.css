@@ -14,13 +14,13 @@
 
 /*======================================== WRAPPER ========================================*/
 .card-wrapper{
-    background-color: #d2042d;
+    background-color: #000000;
     width: 50rem;
     height: 22rem;
     border-radius: 3rem;
     padding: 2rem 2rem 4rem 2rem;
 
-    filter: drop-shadow(0px 16px 3px #ffb5c4);
+    filter: drop-shadow(0px 16px 3px #00bf40);
 }
 
 /*======================================== CARD HEADER ========================================*/
@@ -28,6 +28,11 @@
 .logo-container{
     display: flex;
     justify-content: right;
+}
+
+.logo{
+    height: auto;
+    width: 2rem;
 }
 
 /*======================================== CARD BODY ========================================*/
@@ -52,13 +57,19 @@ body{
 
 .left-container > .album-cover {
     background-color: rgb(53, 53, 53);
-    height: 18rem;
-    width: 20rem;
+    height: 120%;
+    width: 222%;
     border-radius: 3rem;
-    /* centering album cover, temp fix */
-    margin-bottom: 1rem;
+    border: 1px solid rgb(99, 99, 99, 0.1);
 }
 
+
+.album-pic{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+}
 /*======================================== CARD RIGHT SIDE ======================================== */
 
 
@@ -84,13 +95,13 @@ body{
 
 .song-info > .recently-played{
     font-size: 5px;
-    color: rgb(207, 207, 207);
+    color: rgb(0, 191, 64);
     font-family: 'GothicA1-ExtraLight', sans-serif;
-    font-style: thin;
+    font-style: italic;
 }
 
 .song-artist{
-    filter: drop-shadow(0px 7px 1.5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 7px 1.5px rgba(0, 191, 64, 1));
 }
 
 .song-artist > .song{
@@ -125,6 +136,7 @@ body{
     height: 1.2rem;
     width: auto;
     margin-bottom: 1rem;
+    cursor: pointer;
 
 }
 
